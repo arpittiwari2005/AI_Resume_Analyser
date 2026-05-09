@@ -198,15 +198,3 @@ SMTP_PASSWORD=your_app_password
 | 🛠️ **Admin** | Post job descriptions, view all applicant resumes and scores |
 
 ---
-
-## 📄 License
-
-This project is licensed under the [MIT License](LICENSE).
-
----
-
-<div align="center">
-
-Built with ❤️ using **FastAPI** + **Next.js**
-
-</div>

@@ -1,0 +1,464 @@
+{
+    "Software Engineer": [
+        {
+            "id": 1,
+            "question": "Tell me about yourself and your background.",
+            "expected_answer": "I have a background in computer science and experience developing scalable web applications. I am passionate about learning new technologies and solving complex problems."
+        },
+        {
+            "id": 2,
+            "question": "Why do you want to work for our company?",
+            "expected_answer": "I admire your company's innovative approach to industry challenges and the strong culture of collaboration. I believe my skills align well with your mission."
+        },
+        {
+            "id": 3,
+            "question": "Describe a time you faced a difficult technical challenge and how you solved it.",
+            "expected_answer": "I encountered a major performance bottleneck in a legacy system. I solved it by profiling the code, identifying inefficient database queries, and implementing caching, which improved speed by 50%."
+        },
+        {
+            "id": 4,
+            "question": "What is your greatest strength as an engineer?",
+            "expected_answer": "My greatest strength is my ability to quickly learn and adapt to new frameworks. I also excel at debugging complex issues and writing clean, maintainable code."
+        },
+        {
+            "id": 5,
+            "question": "What is a weakness you are currently working to improve?",
+            "expected_answer": "Sometimes I can be too focused on optimizing small details. I am learning to better prioritize tasks by understanding the larger business impact to deliver MVP features faster."
+        },
+        {
+            "id": 6,
+            "question": "How do you handle disagreements with team members on architectural decisions?",
+            "expected_answer": "I handle disagreements by focusing on objective data and trade-offs. I listen to their perspective, explain my reasoning, and if we can't agree, we build a quick proof-of-concept to test the best approach."
+        },
+        {
+            "id": 7,
+            "question": "Can you explain the difference between a REST API and GraphQL?",
+            "expected_answer": "REST exposes multiple endpoints for different resources and can return over-fetched data. GraphQL uses a single endpoint where clients specify exactly what data they need, making it more efficient for complex nested data."
+        },
+        {
+            "id": 8,
+            "question": "Describe your experience with CI/CD and deployment pipelines.",
+            "expected_answer": "I have used GitHub Actions and Jenkins to automate testing and deployment. I am familiar with Docker containerization and deploying applications to AWS and Vercel."
+        },
+        {
+            "id": 9,
+            "question": "How do you ensure the security of a web application?",
+            "expected_answer": "I follow OWASP best practices, ensure proper input validation, use prepared statements to prevent SQL injection, implement secure JWT authentication, and use HTTPS protocols."
+        },
+        {
+            "id": 10,
+            "question": "What is your approach to writing unit and integration tests?",
+            "expected_answer": "I practice Test-Driven Development when possible. I write unit tests for core business logic and integration tests for API endpoints using tools like Jest and PyTest to ensure reliability."
+        },
+        {
+            "id": 11,
+            "question": "Where do you see your career in 5 years?",
+            "expected_answer": "In 5 years, I aim to be a Senior Technical Lead where I can mentor junior developers, architect large-scale systems, and contribute heavily to the technical direction of the product."
+        },
+        {
+            "id": 12,
+            "question": "How do you manage your time when assigned multiple high-priority tasks?",
+            "expected_answer": "I prioritize tasks based on deadlines and business impact using Agile methodologies. I communicate transparently with stakeholders if timelines need to be adjusted and focus on unblocking the most critical paths first."
+        },
+        {
+            "id": 13,
+            "question": "Explain a concept like polymorphism to a non-technical person.",
+            "expected_answer": "Polymorphism is like a universal remote control. The remote has a 'Play' button. Regardless of whether you point it at a TV, a DVD player, or a stereo, pressing 'Play' makes the device perform its specific play action."
+        },
+        {
+            "id": 14,
+            "question": "What happens when you type a URL into a browser and press Enter?",
+            "expected_answer": "The browser checks its cache, performs a DNS lookup to find the IP address, initiates a TCP handshake, negotiates TLS for security, sends an HTTP GET request, and finally parses the HTML response to render the page."
+        },
+        {
+            "id": 15,
+            "question": "Do you have any questions for us?",
+            "expected_answer": "Yes, could you tell me more about the engineering culture here and what the day-to-day looks like for someone in this role? I'm also curious about your primary tech stack evolution plans."
+        }
+    ],
+    "Data Analyst": [
+        {
+            "id": 16,
+            "question": "What data visualization tools do you prefer?",
+            "expected_answer": "I primarily use Tableau and Power BI for building dashboards, along with Python's matplotlib and seaborn for exploratory data analysis."
+        },
+        {
+            "id": 17,
+            "question": "How do you handle missing or corrupted data?",
+            "expected_answer": "I first assess the scope of the missing data. If it's small, I might impute values using mean/median or advanced techniques like KNN. If missing randomly, I might drop rows, depending on the statistical impact."
+        },
+        {
+            "id": 18,
+            "question": "Explain a SQL JOIN vs a UNION.",
+            "expected_answer": "JOIN combines columns from two tables based on a related key. UNION combines rows from two queries with the same column structure, excluding duplicates by default."
+        },
+        {
+            "id": 19,
+            "question": "Describe your experience with Python pandas.",
+            "expected_answer": "I use pandas extensively for data manipulation, GroupBy aggregations, merging datasets, and cleaning raw CSV or SQL data for downstream analysis."
+        },
+        {
+            "id": 20,
+            "question": "What is the difference between supervised and unsupervised learning?",
+            "expected_answer": "Supervised learning uses labeled training data to predict outcomes, like regression or classification. Unsupervised learning deals with unlabeled data to find hidden structures, like clustering or anomaly detection."
+        },
+        {
+            "id": 21,
+            "question": "How do you communicate complex technical findings to non-technical stakeholders?",
+            "expected_answer": "I focus on the business impact rather than the technical methodology. I use visual aids, clear analogies, and summarize the key actionable insights explicitly."
+        },
+        {
+            "id": 22,
+            "question": "What is a p-value and how do you use it?",
+            "expected_answer": "A p-value measures the probability of obtaining test results at least as extreme as the observed ones, under the assumption that the null hypothesis is correct. I use it to determine statistical significance in A/B testing."
+        },
+        {
+            "id": 23,
+            "question": "Describe an A/B test you have conducted.",
+            "expected_answer": "I ran an A/B test measuring the conversion rate of a checkout page layout. I segmented traffic, determined sample sizes, ran the test for two weeks, and measured the statistical significance of the uplift."
+        },
+        {
+            "id": 24,
+            "question": "What are window functions in SQL?",
+            "expected_answer": "Window functions perform calculations across a set of table rows related to the current row, like RANK() or ROW_NUMBER(), without collapsing the result set like aggregate functions do."
+        },
+        {
+            "id": 25,
+            "question": "How do you detect anomalies in a dataset?",
+            "expected_answer": "I use statistical methods like Z-scores or interquartile ranges for simpler data, and isolation forests or DBSCAN clustering for high-dimensional datasets."
+        },
+        {
+            "id": 26,
+            "question": "What metrics would you formulate to measure the success of a new feature?",
+            "expected_answer": "I would look at adoption rates, user engagement frequency, retention impact, and any secondary effects on revenue or support ticket volume."
+        },
+        {
+            "id": 27,
+            "question": "Explain the concept of normal distribution.",
+            "expected_answer": "A normal distribution is a bell-shaped curve where the data is symmetrically distributed around the mean, implying most observations cluster around the central peak."
+        },
+        {
+            "id": 28,
+            "question": "How do you approach learning a new business domain?",
+            "expected_answer": "I interview domain experts, read industry reports, examine core KPIs, and immerse myself in the raw data to understand the unique challenges and variables of the domain."
+        },
+        {
+            "id": 29,
+            "question": "What is data normalization?",
+            "expected_answer": "Data normalization involves structuring relational databases to reduce redundancy and improve integrity, usually by dividing larger tables into smaller ones and linking them via relationships."
+        },
+        {
+            "id": 30,
+            "question": "Have you worked with big data tools?",
+            "expected_answer": "Yes, I have experience with Apache Spark for distributed data processing and writing complex Hive or Presto queries against data lakes."
+        }
+    ],
+    "Business Analyst": [
+        {
+            "id": 31,
+            "question": "What are your core responsibilities as a Business Analyst?",
+            "expected_answer": "I bridge the gap between IT and the business by gathering requirements, mapping processes, and delivering data-driven recommendations to improve efficiency."
+        },
+        {
+            "id": 32,
+            "question": "How do you handle a stakeholder who constantly changes requirements?",
+            "expected_answer": "I implement strong change-management processes, ensure requirements are documented and signed off early, and clearly communicate the cost and timeline impacts of new changes."
+        },
+        {
+            "id": 33,
+            "question": "Describe your process for requirement gathering.",
+            "expected_answer": "I start with stakeholder interviews, host workshops, study existing documentation, use surveys if necessary, and finally formalize the findings into a BRD (Business Requirements Document)."
+        },
+        {
+            "id": 34,
+            "question": "What is the difference between a BRD and an FRS?",
+            "expected_answer": "A BRD states what the business wants to achieve conceptually. An FRS translates those needs into specific functional requirements detailing how the system should behave."
+        },
+        {
+            "id": 35,
+            "question": "How do you model business processes?",
+            "expected_answer": "I use BPMN to create clear, standardized flowcharts outlining workflows, actors, and decision trees using tools like Visio or Lucidchart."
+        },
+        {
+            "id": 36,
+            "question": "Explain Agile methodology from a BA's perspective.",
+            "expected_answer": "In Agile, I focus on drafting user stories, defining acceptance criteria, grooming the backlog, and collaborating continuously with the development team during sprints."
+        },
+        {
+            "id": 37,
+            "question": "How do you evaluate if a project is successful?",
+            "expected_answer": "Success is determined by whether the project met the initial objective KPIs, stayed within budget and timeline, and resulted in positive stakeholder satisfaction."
+        },
+        {
+            "id": 38,
+            "question": "What is a SWOT analysis and when do you use it?",
+            "expected_answer": "SWOT identifies Strengths, Weaknesses, Opportunities, and Threats. I use it during feasibility studies or strategic planning to evaluate a business case."
+        },
+        {
+            "id": 39,
+            "question": "Describe a difficult stakeholder interaction and your resolution.",
+            "expected_answer": "A stakeholder demanded an impossible deadline. I sat down with them, broke down the effort estimates, and compromised by releasing a functional MVP by their date, with the rest following later."
+        },
+        {
+            "id": 40,
+            "question": "How do you conduct user acceptance testing (UAT)?",
+            "expected_answer": "I develop realistic test cases based on user stories, facilitate sessions with end-users, log the defects, and verify fixes before final sign-off."
+        },
+        {
+            "id": 41,
+            "question": "What techniques do you use for elicitation?",
+            "expected_answer": "I use brainstorming, document analysis, focus groups, interface analysis, and prototyping to deeply understand requirements."
+        },
+        {
+            "id": 42,
+            "question": "Explain a Use Case.",
+            "expected_answer": "A use case describes how a user interacts with a system to achieve a specific goal, outlining the steps, preconditions, active flows, and alternate paths."
+        },
+        {
+            "id": 43,
+            "question": "How do you prioritize requirements?",
+            "expected_answer": "I often use the MoSCoW method to categorize requirements into Must-haves, Should-haves, Could-haves, and Won't-haves based on business value and urgency."
+        },
+        {
+            "id": 44,
+            "question": "What involves a GAP analysis?",
+            "expected_answer": "A GAP analysis compares the current state of a business process to its desired future state, identifying the deficiencies (the gaps) and outlining the steps to bridge them."
+        },
+        {
+            "id": 45,
+            "question": "How do you measure ROI for a project?",
+            "expected_answer": "I calculate the net financial benefit divided by the total investment cost. This involves estimating both tangible increases in revenue or cost savings against the development expense."
+        }
+    ],
+    "Python Developer": [
+        {
+            "id": 46,
+            "question": "What are the key differences between Python 2 and Python 3?",
+            "expected_answer": "Python 3 uses print as a function, integer division yields floats, handles strings inherently as Unicode, and has improved exception handling syntax."
+        },
+        {
+            "id": 47,
+            "question": "Explain list comprehensions in Python.",
+            "expected_answer": "List comprehensions provide a concise way to create lists using brackets containing an expression followed by a for clause, reducing the need for verbose loops."
+        },
+        {
+            "id": 48,
+            "question": "What is the Global Interpreter Lock (GIL)?",
+            "expected_answer": "The GIL is a mutex that protects access to Python objects, preventing multiple native threads from executing Python bytecodes at once, which makes CPython thread-safe but limits CPU-bound multithreading."
+        },
+        {
+            "id": 49,
+            "question": "How do you manage memory in Python?",
+            "expected_answer": "Memory is handled automatically by the Python memory manager which uses reference counting and a cyclic garbage collector to free up unused objects."
+        },
+        {
+            "id": 50,
+            "question": "Explain the difference between deepcopy and shallow copy.",
+            "expected_answer": "A shallow copy creates a new object but stores references to the original nested elements. A deepcopy creates a completely independent clone, including all recursively copied nested objects."
+        },
+        {
+            "id": 51,
+            "question": "What are Python decorators?",
+            "expected_answer": "Decorators are functions that modify the behavior of another function or method. They wrap the target function to execute code before or after it runs without altering its core logic."
+        },
+        {
+            "id": 52,
+            "question": "Describe the difference between purely functional and object-oriented paradigms in Python.",
+            "expected_answer": "Functional programming focuses on pure functions and immutable data (like map/filter). OOP focuses on encapsulating state and behavior within classes and objects."
+        },
+        {
+            "id": 53,
+            "question": "What are *args and **kwargs?",
+            "expected_answer": "*args passes a variable number of non-keyworded arg lists to a function, while **kwargs passes a variable number of keyworded dictionary-like arguments."
+        },
+        {
+            "id": 54,
+            "question": "How do you handle exceptions in Python?",
+            "expected_answer": "I use try, except, finally blocks to catch exceptions, ensuring the program does not crash and resources are reliably cleaned up even in failure paths."
+        },
+        {
+            "id": 55,
+            "question": "What are Python generators and yield?",
+            "expected_answer": "Generators act like iterative functions but use 'yield' to return data lazily. They maintain their state between calls, making them far more memory-efficient than returning heavy lists."
+        },
+        {
+            "id": 56,
+            "question": "Explain the use of 'self' in Python.",
+            "expected_answer": "'self' represents the instance of the class in methods. It is required to access the class attributes and other methods within that instance object."
+        },
+        {
+            "id": 57,
+            "question": "What is the __init__ method for?",
+            "expected_answer": "__init__ is the constructor method in Python. It is automatically called to initialize the object's state when a new instance of the class is created."
+        },
+        {
+            "id": 58,
+            "question": "How would you optimize a slow Python script?",
+            "expected_answer": "I would use the cProfile module to find bottlenecks, optimize loops, replace lists with sets for lookup speed, or rewrite heavy CPU tasks using libraries like NumPy or Cython."
+        },
+        {
+            "id": 59,
+            "question": "Explain monkey patching.",
+            "expected_answer": "Monkey patching is dynamically modifying a class or module at runtime. It's useful for mocking objects during testing but generally discouraged in production code."
+        },
+        {
+            "id": 60,
+            "question": "What frameworks are you familiar with?",
+            "expected_answer": "I have extensive experience building scalable APIs using FastAPI and Django REST framework, along with familiarity using Flask for microservices."
+        }
+    ],
+    "Java Developer": [
+        {
+            "id": 61,
+            "question": "What are the core concepts of OOP in Java?",
+            "expected_answer": "The four main pillars of OOP in Java are Encapsulation, Inheritance, Polymorphism, and Abstraction."
+        },
+        {
+            "id": 62,
+            "question": "Explain the difference between final, finally, and finalize.",
+            "expected_answer": "Final restricts modification (constants/immutable classes). Finally is a block always executed in try-catch. Finalize is a method called by garbage collector before object deletion."
+        },
+        {
+            "id": 63,
+            "question": "What is the difference between an Interface and an Abstract Class?",
+            "expected_answer": "An interface establishes contract behavior with abstract methods and allows multiple inheritance. Abstract classes can have state, constructors, and concrete methods but don't support multiple inheritance."
+        },
+        {
+            "id": 64,
+            "question": "Explain method overloading vs overriding.",
+            "expected_answer": "Overloading occurs in the same class with methods sharing the same name but different parameters. Overriding occurs in sub-classes modifying methods established in a parent class."
+        },
+        {
+            "id": 65,
+            "question": "What is the purpose of the volatile keyword?",
+            "expected_answer": "The volatile keyword indicates that a variable's value will be modified by different threads, ensuring that every read of the variable reads from main memory rather than a local thread cache."
+        },
+        {
+            "id": 66,
+            "question": "How does Garbage Collection work in Java?",
+            "expected_answer": "Java's GC automatically manages memory by sweeping the heap for objects with no active references. Generational GC works by separating objects into young and old generations based on lifetime."
+        },
+        {
+            "id": 67,
+            "question": "What is the Spring Framework and Dependency Injection?",
+            "expected_answer": "Spring is an enterprise framework. Dependency Injection is design pattern where objects are supplied their dependencies via Spring's IoC container rather than creating them intrinsically."
+        },
+        {
+            "id": 68,
+            "question": "Differences between HashMap and HashTable?",
+            "expected_answer": "HashMap is non-synchronized, permits null keys/values, and is faster. HashTable is synchronized (thread-safe), does not allow nulls, and is slower."
+        },
+        {
+            "id": 69,
+            "question": "Explain the Java Stream API.",
+            "expected_answer": "Streams introduced in Java 8 provide a functional approach to process collections. They support operations like map, filter, and reduce for processing pipelines efficiently."
+        },
+        {
+            "id": 70,
+            "question": "What is deadlocking in multithreading?",
+            "expected_answer": "Deadlock occurs when two or more threads are blocked forever, each waiting for the other to release locks on resources they need to proceed."
+        },
+        {
+            "id": 71,
+            "question": "What are Checked vs Unchecked exceptions?",
+            "expected_answer": "Checked exceptions are verified at compile-time and must be handled (like IOException). Unchecked exceptions, extending RuntimeException, occur at runtime (like NullPointerException)."
+        },
+        {
+            "id": 72,
+            "question": "What is a singleton pattern?",
+            "expected_answer": "A singleton ensures only one instance of a class exists throughout the application lifecycle, usually achieved via a private constructor and a static getInstance method."
+        },
+        {
+            "id": 73,
+            "question": "Describe autoboxing and unboxing.",
+            "expected_answer": "Autoboxing is the automatic conversion the Java compiler makes between primitive types and their corresponding object wrapper classes. Unboxing is the reverse."
+        },
+        {
+            "id": 74,
+            "question": "What is JPA?",
+            "expected_answer": "JPA (Java Persistence API) is a specification for ORM (Object-Relational Mapping). Hibernate is a popular implementation of this specification."
+        },
+        {
+            "id": 75,
+            "question": "How do you secure a Spring Boot application?",
+            "expected_answer": "I secure Spring Boot apps using Spring Security, integrating JWTs for stateless authentication, and applying role-based access control annotations securely to the controller layers."
+        }
+    ],
+    "Test Engineer": [
+        {
+            "id": 76,
+            "question": "What is the difference between smoke testing and sanity testing?",
+            "expected_answer": "Smoke testing verifies critical functionalities work broadly after a fresh build. Sanity testing is a narrow, deep test ensuring specific bug fixes or minor changes were successful."
+        },
+        {
+            "id": 77,
+            "question": "Describe the testing life cycle (STLC).",
+            "expected_answer": "The STLC involves Requirements Analysis, Test Planning, Test Case Development, Environment Setup, Test Execution, and Test Cycle Closure."
+        },
+        {
+            "id": 78,
+            "question": "What is a test plan?",
+            "expected_answer": "A test plan is a document outlining the scope, approach, resources, schedule, and strategy of intended test activities."
+        },
+        {
+            "id": 79,
+            "question": "How do you prioritize bugs you discover?",
+            "expected_answer": "I prioritize bugs based on severity (impact on the system) and priority (urgency for the business). Critical blockers are addressed immediately before minor UI glitches."
+        },
+        {
+            "id": 80,
+            "question": "What is regression testing?",
+            "expected_answer": "Regression testing ensures that new code changes or bug fixes have not disrupted or broken existing, previously working software functionalities."
+        },
+        {
+            "id": 81,
+            "question": "Explain equivalence partitioning and boundary value analysis.",
+            "expected_answer": "Equivalence partitioning divides input data into classes to reduce testing redundancy. Boundary value analysis focuses on testing the very edge case thresholds of those valid bounds."
+        },
+        {
+            "id": 82,
+            "question": "Describe your experience with Selenium WebDriver.",
+            "expected_answer": "I use Selenium WebDriver to automate cross-browser UI testing. I write robust scripts locating web elements using XPath and CSS selectors mapped natively in POM."
+        },
+        {
+            "id": 83,
+            "question": "What is the Page Object Model (POM)?",
+            "expected_answer": "POM is a design pattern used in test automation where web pages are represented as classes, enhancing reusability and keeping test logic separate from UI locators."
+        },
+        {
+            "id": 84,
+            "question": "How do you test an API?",
+            "expected_answer": "I use tools like Postman or REST Assured. I test endpoints for valid JSON schemas, verify response HTTP status codes, check authentication constraints, and validate response payloads."
+        },
+        {
+            "id": 85,
+            "question": "What is the difference between Load, Performance, and Stress testing?",
+            "expected_answer": "Performance testing checks baseline speed. Load testing checks behavior under expected user load. Stress testing pushes the system beyond maximum capacity to observe how it fails."
+        },
+        {
+            "id": 86,
+            "question": "What are stubs and mocks natively used for?",
+            "expected_answer": "Stubs and mocks simulate components or external systems during testing to isolate the module being tested from flaky network dependencies."
+        },
+        {
+            "id": 87,
+            "question": "What do you include in a clear bug report?",
+            "expected_answer": "A good bug report includes a concise title, environment details, explicit steps to reproduce, expected vs actual behavior, screenshots, and logs."
+        },
+        {
+            "id": 88,
+            "question": "What is BDD?",
+            "expected_answer": "Behavior-Driven Development involves writing tests in plain English using Gherkin syntax (Given/When/Then). I've used Cucumber to execute these test definitions natively."
+        },
+        {
+            "id": 89,
+            "question": "Describe a difficult bug you tracked down.",
+            "expected_answer": "I tracked down an intermittent race condition that only appeared under heavy database lock contention. It required combining backend logs with specialized stress testing scripts to reproduce reliably."
+        },
+        {
+            "id": 90,
+            "question": "Why is test automation important?",
+            "expected_answer": "Test automation massively scales regression coverage on CI/CD pipelines, allowing manual testers to focus natively on complex edge cases and exploratory testing."
+        }
+    ]
+}
